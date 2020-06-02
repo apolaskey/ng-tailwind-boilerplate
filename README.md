@@ -1,5 +1,5 @@
 # Introduction
-This is a template repository for flexible design platform around Angular 9; it makes no opinions or assumptions around project
+This is a template repository for a flexible design platform around Angular 9; it makes no opinions or assumptions around project
 structure outside of what is required for Angular CLI.
 
 ## Key Features
@@ -11,13 +11,18 @@ structure outside of what is required for Angular CLI.
 - [x] Angular AOT optimized builds
 - [x] [PurgeCSS support](https://www.npmjs.com/package/purgecss)
 - [x] [Lottie support](https://www.npmjs.com/package/ngx-lottie)
+- [x] [Firebase support w/Angular Fire](https://github.com/angular/angularfire)
 
 The above features should allow for ~2MB bundles for small applications while remaining designer friendly.
 
 # Usage
 To begin; using your favorite text-editor's find-all change all occurrences of `ng-tailwind-boilerplate` to your own projects name
 
-This project was generated with  version 9.1.7.
+For guarded routes refer to [this documentation](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md)
+
+For push notifications refer to [this documentation](https://github.com/angular/angularfire/blob/master/docs/messaging/messaging.md)
+
+For performance monitoring refer to [this documentation](https://github.com/angular/angularfire/blob/master/docs/performance/getting-started.md)
 
 ## Development server
 
