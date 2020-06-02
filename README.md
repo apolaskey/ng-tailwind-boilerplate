@@ -1,6 +1,23 @@
-# NgTailwindBoilerplate
+# Introduction
+This is a template repository for flexible design platform around Angular 9; it makes no opinions or assumptions around project
+structure outside of what is required for Angular CLI.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## Key Features
+- [x] [TailwindCSS Support](https://tailwindcss.com/)
+- [x] SCSS Support w/PostCSS
+- [x] [FontAwesome Support](https://fontawesome.com/)
+- [x] [Angular CLI support](https://github.com/angular/angular-cli)
+- [x] Angular HMR support
+- [x] Angular AOT optimized builds
+- [x] [PurgeCSS support](https://www.npmjs.com/package/purgecss)
+- [x] [Lottie support](https://www.npmjs.com/package/ngx-lottie)
+
+The above features should allow for ~2MB bundles for small applications while remaining designer friendly.
+
+# Usage
+To begin; using your favorite text-editor's find-all change all occurrences of `ng-tailwind-boilerplate` to your own projects name
+
+This project was generated with  version 9.1.7.
 
 ## Development server
 
