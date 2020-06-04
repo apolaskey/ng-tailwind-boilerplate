@@ -9,10 +9,11 @@ import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { DeviceDetectorModule } from "ngx-device-detector";
 import { LoggerModule } from "ngx-logger";
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { LottieModule } from "ngx-lottie";
 import player from "lottie-web";
+import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,14 @@ import player from "lottie-web";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     DeviceDetectorModule.forRoot(),
     LoggerModule.forRoot(environment.loggerConfig),
     AngularFireModule.initializeApp(environment.firebase),

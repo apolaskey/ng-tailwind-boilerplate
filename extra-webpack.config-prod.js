@@ -1,4 +1,12 @@
 const purgecss = require('@fullhuman/postcss-purgecss');
+const purgeRule = purgecss({
+  content: [
+    "./src/**/*.html",
+    "./src/**/*.ts"
+  ],
+  defaultExtractor: content =>
+    content.match(/[A-Za-z0-9-_:/]+/g) || []
+});
 
 module.exports = {
   module: {
@@ -14,17 +22,7 @@ module.exports = {
               plugins: () => [
                 //require('postcss-import'),
                 require('tailwindcss')('./tailwind.config.js'),
-                purgecss({
-                  // Specify the paths to all of the template files in your project
-                  content: [
-                    "./src/**/*.html",
-                    "./src/**/*.ts"
-                    // etc.
-                  ],
-                  // Include any special characters you're using in this regular expression
-                  defaultExtractor: content =>
-                    content.match(/[A-Za-z0-9-_:/]+/g) || []
-                })
+                purgeRule
               ]
             }
           }
