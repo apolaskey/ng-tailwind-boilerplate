@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "start-hot": "ng serve --progress --hmr",
     "start-hot-live": "ng serve --progress --hmr --host 0.0.0.0",
-    "build": "ng build",
-    "build-prod": "ng build --prod --extractCss=true --vendorChunk=true",
+    "build": "ng build --prod --extractCss=true --vendorChunk=true",
     "i18n:init": "ngx-translate-extract --input ./src --output ./src/assets/i18n/template.json --key-as-default-value --replace --format json",
     "i18n:extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json --clean --format json",
     "test": "ng test",
