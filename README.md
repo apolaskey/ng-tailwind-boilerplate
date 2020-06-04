@@ -19,6 +19,12 @@ The above features should allow for ~2MB bundles for small applications while re
 # Usage
 To begin; using your favorite text-editor's find-all change all occurrences of `ng-tailwind-boilerplate` to your own projects name
 
+`npm install` -- Install all of the required dependencies
+
+`npm run start-hot` -- Start the dev-server
+
+`npm run build` -- Perform a production release
+
 For guarded routes refer to [this documentation](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md)
 
 For push notifications refer to [this documentation](https://github.com/angular/angularfire/blob/master/docs/messaging/messaging.md)
