@@ -1,3 +1,4 @@
+![CI](https://github.com/apolaskey/ng-tailwind-boilerplate/workflows/CI/badge.svg)
 ![example](https://user-images.githubusercontent.com/916444/83819800-d8289700-a698-11ea-9292-7c5251cc3f52.png)
 # Introduction
 This is a template repository for a flexible design platform around Angular 9; it makes no opinions or assumptions around project
